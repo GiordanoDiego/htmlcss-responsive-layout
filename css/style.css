@@ -36,17 +36,14 @@ footer {
     width: 100%;
     margin-top: 15px;
     background-color: var(--light-blue);
-    border: 1px dashed blue;
     padding: 10px;
+    text-align: center;
 }
 
 .my-col-100{
     width: 100%;
 }
 
-.my-col-50{
-    border: 1px dashed green;
-}
 
 #section-2,
 #section-6{
@@ -67,6 +64,13 @@ img{
     padding: 4px 8px;
 }
 
+h2, h3{
+    color: var(--blue);
+}
+
+h2{
+    font-size: 4em;
+}
 
 /* -----------------HEADER RULE----------------- */
 header{
@@ -113,7 +117,15 @@ header ul li:last-child a{
     align-items: center;
 }
 /* -----------------MAIN RULE------------------- */
+/* -------------section 1-------------- */
+#section-1 .my-col{
+    border-radius: 10px;
+    padding: 20px 40px;
+}
 
+h2, h3{
+    margin-bottom: 20px;
+}
 
 /* -----------------FOOTER RULE----------------- */
 
@@ -122,6 +134,34 @@ header ul li:last-child a{
 /* IN MOBILE FIRST */
 
 @media screen and (min-width: 768px) {
+    .my-col-66{
+        width: calc(((100% / 3) * 2) - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .my-col-33,
+    #section-4 .my-col-33{
+        width: calc((100% / 3) - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #section-1 .my-row{
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0px;
+    }
+
+    #section-1 .my-col-50{
+        width: calc(100% - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+
     #section-4 .my-col-50{
         width: calc((100% / 2) - 20px);
         margin-right: 10px;
@@ -144,7 +184,14 @@ header ul li:last-child a{
         display: flex;
         border: 1px dashed green;
     }
+
+    .my-col-50{
+        width: calc((100% / 2));
+    }
+
+   
 }
+
 
 @media screen and (min-width: 992px) {
     header nav{
@@ -160,17 +207,13 @@ header ul li:last-child a{
         margin-right: 10px;
         margin-left: 10px;
         display: flex;
-        border: 1px dashed green;
     }
-
    
-
     .my-col-33,
     #section-4 .my-col-33{
         width: calc((100% / 3) - 20px);
         margin-right: 10px;
         margin-left: 10px;
-        border: 1px dashed green;
     }
 
     #section-1 .my-row{
@@ -192,7 +235,6 @@ header ul li:last-child a{
 
     .my-col-50{
         width: calc((100% / 2));
-        border: 1px dashed green;
     }
 
     #section-3 .my-col{
@@ -209,7 +251,7 @@ header ul li:last-child a{
 }
 
 /* -----------------DEBUG----------------- */
-.debug .container,
+/* .debug .container,
 .debug .container-small {
     border: 1px dashed red;
-}
+} */
