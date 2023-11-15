@@ -40,7 +40,6 @@ footer {
     width: 100%;
     margin-top: 15px;
     background-color: var(--light-blue);
-    padding: 10px;
     text-align: center;
 }
 
@@ -120,19 +119,31 @@ header ul li:last-child a{
     display: flex;
     align-items: center;
 }
-/* -----------------MAIN RULE------------------- */
-/* -------------section 1-------------- */
-#section-1 .my-col{
-    border-radius: 20px;
-    padding: 20px 40px;
-}
-
 h2, h3{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+#section-3 .my-col,
+#section-4 .my-col{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+/* -----------------MAIN RULE------------------- */
+/* -------------section 1-------------- */
+#section-1 .my-col{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+
 #section-1 p{
     margin-bottom: 20px;
+}
+#section-1 img{
+    display: block;
 }
 #section-1 .button{
     background-color: var(--blue);
@@ -145,9 +156,12 @@ h2, h3{
 }
 
 /* -------------section 2-------------- */
-.my-col-50{
+#section-2 .my-col-50{
     margin-bottom: 20px;
     padding: 20px;
+}
+#section-2 h3{
+    font-size: 2em;
 }
 
 #section-2 h3,
@@ -188,6 +202,10 @@ h2, h3{
     color: white;
 }
 
+#section-3 .my-col p{
+    margin-top: 20px;
+}
+
 #section-3 .my-col img{
     width: 200px;
     height: 200px;
@@ -203,15 +221,28 @@ h2, h3{
 
 #section-3 .testimonial-container h3{
     color: var(--purple);
+    font-size: 2em;
  }
 
 /* -------------section 4-------------- */
 #section-4{
     background-color: var(--purple);
 }
+
+.title-section-4-container{
+    text-align: center;
+}
+.title-section-4-container h3{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
 #section-4 .my-col{
     background-color: white;
     border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
 }
 
 #section-4 .my-row .my-col h2,
@@ -235,6 +266,8 @@ h2, h3{
 }
 
 /* -------------section 5-------------- */
+
+
 #section-5 img{
     border-radius: 50%;
     height: 200px;
@@ -247,7 +280,7 @@ h2, h3{
 }
 
 #section-5 h3{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #section-5 h3{
@@ -262,23 +295,44 @@ h2, h3{
     text-decoration: none;
 }
 
+#section-5 .img-about-container{
+    position: relative;
+}
+#section-5 .quote-right-container i{
+    color: var(--purple);
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    font-size: 3em;
+}
+
 /* -------------section 6-------------- */
 #section-6{
     text-align: center;
     padding: 20px;
 }
 
-#section-6,
-#section-6 h3 {
+#section-6{
     color: white;
 }
 
-#section-6 h2{
+#section-6 .container-small div h2 {
+    color: white;
+    font-size: 2em;
+}
+#section-6 h3{
     color: #F9C15F;
+    font-size: 3em;
+}
+
+#section-6 h4{
+    font-weight: lighter;
 }
 
 #section-6 p{
     margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 #section-6 a{
@@ -345,6 +399,9 @@ footer a{
         margin-left: 10px;
     }
     
+    #section-3 .my-col-66{
+        align-items: center;
+    }
 
     #section-4 .my-col-50{
         width: calc((100% / 2) - 20px);
@@ -359,6 +416,9 @@ footer a{
         display: flex;
     }
 
+    #section-5 .my-col-40{
+        padding-left: 50px;
+    }
     #section-5 .my-col-40{
         width: calc(((100% / 10) * 4) - 20px);
         margin-right: 10px;
