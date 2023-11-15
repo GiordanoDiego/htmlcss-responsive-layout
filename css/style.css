@@ -189,7 +189,11 @@ h2, h3{
 }
 
 #section-3 .my-col img{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
 #section-3 .testimonial-container{
@@ -233,6 +237,9 @@ h2, h3{
 /* -------------section 5-------------- */
 #section-5 img{
     border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
 #section-5 p{
@@ -258,6 +265,7 @@ h2, h3{
 /* -------------section 6-------------- */
 #section-6{
     text-align: center;
+    padding: 20px;
 }
 
 #section-6,
@@ -284,6 +292,16 @@ h2, h3{
 
 
 /* -----------------FOOTER RULE----------------- */
+footer{
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding-bottom: 40px;
+}
+footer a{
+    color: var(--purple);
+}
 
 
 /* -----------------MEDIA QUERY----------------- */
